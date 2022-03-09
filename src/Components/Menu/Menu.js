@@ -192,7 +192,7 @@ const MenuContent = ({
           mobMenuCloseAnimation(btn);
         }
       });
-      
+
       mobLogoCloseAnimation(".logo");
       // if (
       //   currentSectionTitle === "home" &&
@@ -529,10 +529,12 @@ const MenuContent = ({
           id="ScheduleBtn"
           onClick={onScheduleClickHandler}
           $show={isLogoBtnsShow.second}
+          // className="book-demo-header-btn"
         >
           <RightBtnBorder
             ref={rightBorderBtn}
             $color={currentTheme?.bgScheduleBtn}
+            // className="book-demo-header-btn"
           />{" "}
           <span> BOOK DEMO </span>{" "}
         </MenuRightBtn>{" "}
@@ -834,7 +836,9 @@ const RightBtnBorder = styled(RightBtnSvg)`
   }
 `;
 const MenuRightBtn = styled(MenuBtn)`
-  background: ${({ $bg }) => $bg};
+  // background: ${({ $bg }) => $bg};
+  background: #3cf7a2;
+  color: #353d48;
   padding: 13px 10px;
   border-radius: 67px;
   white-space: nowrap;
@@ -843,13 +847,16 @@ const MenuRightBtn = styled(MenuBtn)`
   transition: 0.2s ease-in-out;
   a,
   a:hover {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
+  }
+  &:focus {
+    outline: 2px solid #ffffff;
   }
   @media (min-width: ${BREAKPOINTS.tablet + 1}px) {
     &:hover {
       background: none;
-
+      color: #ffffff;
       ${RightBtnBorder} {
         animation: ${rightBtnBorderAnimation} 0.5s ease-in;
         animation-direction: normal;
@@ -858,7 +865,7 @@ const MenuRightBtn = styled(MenuBtn)`
       }
     }
     &:active {
-      background: ${({ $bg }) => $bg};
+      // background: ${({ $bg }) => $bg};
     }
   }
 

@@ -1016,7 +1016,10 @@ const HomeContent = ({}) => {
             </Typography>
           </Box>
           <Box className="footer-social-section">
-            <Link to="/eminent-apps">
+            <Link
+              to="//www.linkedin.com/company/eminent-future"
+              target="_blank"
+            >
               <Box>
                 <svg
                   width="25"
@@ -1036,7 +1039,7 @@ const HomeContent = ({}) => {
                 </svg>
               </Box>
             </Link>
-            <Link to="/eminent-apps">
+            <Link to="//instagram.com/eminent.future" target="_blank">
               <Box>
                 <svg
                   width="22"
@@ -1056,7 +1059,7 @@ const HomeContent = ({}) => {
                 </svg>
               </Box>
             </Link>
-            <Link to="/eminent-apps">
+            <Link to="//www.twitter.com/Eminent_Future" target="_blank">
               <Box>
                 <svg
                   width="24"
@@ -1072,7 +1075,10 @@ const HomeContent = ({}) => {
                 </svg>
               </Box>
             </Link>
-            <Link to="/eminent-apps">
+            <Link
+              to="//youtube.com/channel/UCk5Z41Z8QNyGUEkWAF4NA8A"
+              target="_blank"
+            >
               <Box>
                 <svg
                   width="26"
@@ -1088,7 +1094,7 @@ const HomeContent = ({}) => {
                 </svg>
               </Box>
             </Link>
-            <Link to="/eminent-apps">
+            <Link to="//www.medium.com/" target="_blank">
               <Box>
                 <svg
                   width="22"
